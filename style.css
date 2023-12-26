@@ -2,6 +2,10 @@ body{
   background-color:#FBF6EE;
 }
 
+#mypicture{
+boder:30px;  
+}
+
 h1{
   color:#FFB534;
   font-family: 'Architects Daughter', cursive;
