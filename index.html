@@ -3,94 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Resume</title>
-    <link rel="stylesheet" type="text/css" href="https://sj-silva.github.io/html-portfolio/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Sergio Silva</h1>
-    <img id="foto-sergio" src="./assets/images/me.jpg" />
-    
-    <h2>Summary</h2>
-    <p>
-      I hold a Bachelor's and Master's degree Mathematics. Lately, I've been
-      teaching undergraduate students the subjects of Linear Algebra and
-      Calculus. Currently, I am seeking a career opportunity as a Web Developer.
-    </p>
-    <hr />
 
-    <h2>Education</h2>
-    <ul>
-      <li>
-        B.A. in Mathematics at
-        <a href="https://www.im.ufrj.br/index.php/pt/"
-          >Federal University of Rio de Janeiro(UFRJ)</a
-        >
-      </li>
-      <li>
-        M.Sc. in Mathematics at
-        <a href="http://www.dmat.ufba.br/">Federal University of Bahia(UFBA)</a>
-      </li>
+<!--Bootstrap Link-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<style>
+ /*---- CSS Style ----*/
+
+
+ /*--------------*/
+</style>
+
+</head>
+  <body class="bg-light">
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-4 bg-dark text-white text-center py-4">
+          <div class="header-left">
+            <img src="./assets/images/me.jpg" alt="profile photo" class="img-thumbnail rounded-circle mb-2">
+            <h1 class="display-5">Sergio Silva</h1>
+            <h4 class="lead text-uppercase text-white-50 mb-4">Math Teacher</h4>
+          </div>
+          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">Social Media</h5>
+          <ul class="list-unstyled text-white-50 ml-5 py-2 text-start">
+            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+            </svg> <a href="https://www.linkedin.com/in/sergio-silva-math/" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"> /in/sergio-silva-math</a></li>
+
+            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
+            </svg><a href="https://www.youtube.com/@Matematica_Aplicada" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"> @Matematica_Aplicada</a></li>
+         
+            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"></path>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+            </svg> <a href="https://pt.wikipedia.org/wiki/Itaparica" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"> Itaparica, Brazil</a></li>
+          </ul>
+          <h5 id="skills" class="text-uppercase bg-white text-dark py-2 rounded-pill">Skills</h5>
+          <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
+            <li class="list-item text-left">HTML/ CSS/Bootstrap</li>
+            <li class="list-item">Javascript</li>
+            <li class="list-item">C/C++</li>
+            <li class="list-item">OpenGL/OpenCV</li>
+            <li class="list-item">Excel-VBA</li>
+          </ul>
+
+          <h5 id="education" class="text-uppercase bg-white text-dark py-2 rounded-pill">Education</h5>
+          <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
+            <li class="list-item">
+              B.A. in Mathematics
+              <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
+                <li class="list-item">
+              <a href="https://www.im.ufrj.br/index.php/pt/" class="link-light"
+                >Federal University of Rio de Janeiro - UFRJ</a
+              ></li>
+              </ul>
+            </li>
+            <li class="list-item">
+              M.Sc. in Mathematics
+              <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
+                <li class="list-item">
+              <a href="http://www.dmat.ufba.br/" class="link-light">Federal University of Bahia - UFBA</a>
+            </li>
+            </li>
+            
+          </ul>
+
+        </div>
+        
+
+        <div class="col-lg-8 bg-light text-dark py-4 px-5">
+          <div class="header-right">
+            <h4 id="profile" class="text-uppercase">Profile</h4>
+            <hr>
+            <p>I hold a Bachelor's and Master's degree Mathematics. Lately, I've been
+              teaching undergraduate students the subjects of Linear Algebra and
+              Calculus. Currently, I am seeking a career opportunity as a Web Developer.</p>
+          </div>
+          <div>
+            <h4 id="jobs" class="text-uppercase">Work Experience</h4>
+            <hr>
+            <ul class="list">
+              <li class="list-item">
+                <h5 class="text-uppercase"><a href="https://transpetro.com.br/transpetro-institucional/"
+                 class="link-dark" >Petrobras Transporte - Transpetro</a></h5>
+                <h6 class="text-black-50">Administration and Control Technician Jr.</h6>
+                <ul>
+                  <li>Local: São Caetano do Sul - SP</li>
+                  <li>Country: Brazil</li>
+                  <p>Develop Word documents and Excel spreadsheets, accompanied by VBA macros, to aid in pollution control programs, licensing and environmental authorizations, accident prevention, and the optimization of water, energy, and input utilization processes.</p>
+                </ul>
+              </li>
+
+              <li class="list-item">
+                <h5 class="text-uppercase"><a href="https://www.swifttrans.com/"
+                 class="link-dark" >Swift Transportation</a></h5>
+                <h6 class="text-black-50">Truck Driver -  Free and Secure Trade (FAST) US and Canadian Border</h6>
+                <ul>
+                  <li>Local: Troutdale - OR</li>
+                  <li>Country: United States</li>
+                  <p>Transport of finished goods and raw materials over U.S. 48 states and Canada, both to and from manufacturing plants, as well as retail and distribution centers. Conduct thorough vehicle inspections to identify mechanical issues and safety concerns, and implement preventive maintenance procedures.</p>
+                </ul>
+              </li>
+
+              <li class="list-item">
+                <h5 class="text-uppercase"><a href="https://www.ufpe.br/dmat"
+                 class="link-dark" >Federal University of Pernambuco - UFPE</a></h5>
+                <h6 class="text-black-50">Lecturer</h6>
+                <ul>
+                  <li>Local: Recife - PE </li>
+                  <li>Country: Brazil</li>
+                  <p>Between 2014 and 2015, I worked as a lecturer in the Departament of Mathematics, instructing courses such as Linear Algebra, Analytical Geometry, and Multivariable Calculus.</p>
+                </ul>
+              </li>
+
+              <li class="list-item">
+                <h5 class="text-uppercase"><a href="https://www.ufmt.br/campus/varzea-grande"
+                 class="link-dark" >Federal University of Mato Grosso - UFMT</a></h5>
+                <h6 class="text-black-50">Lecturer</h6>
+                <ul>
+                  <li>Local: Varzea Grande - MT </li>
+                  <li>Country: Brazil</li>
+                  <p>Lecturer at Engineering Institue of Varzea Grande, Mato Grosso(MT).
+                     I taught Linear Algebra for the Computer Engineering, Transport Engineering and Automation departments. 
+                     Initiated and spearheaded a social project focused on introducing chess to children at <a href="https://www.facebook.com/ProfessoraMarize/"class="link-dark">Escola Estadual Senador Azeredo(EESA)</a>.</p>
+                </ul>
+              </li>
+
+              <li class="list-item">
+                <h5 class="text-uppercase"><a href="https://www.ufr.edu.br"
+                 class="link-dark" >Federal University of Rondonopolis - UFR</a></h5>
+                <h6 class="text-black-50">Lecturer</h6>
+                <ul>
+                  <li>Local: Rondonopolis - MT </li>
+                  <li>Country: Brazil</li>
+                  <p>
+                    Lecturer Linear Algebra, Numerical Analysis, Single and Multivariable Calculus at Institute of Agricultural and 
+                    Technological Sciences of Rondonopolis, Mato Grosso(MT). Develop teaching methodologies in Mathematics based on 
+                    Computer Graphics and Computer Vision, using <a href="https://github.com/sj-silva/OpenGLModerno" class="link-dark">OpenGL</a> and <a href="https://github.com/sj-silva/OpenCVPrimeirosPassos" class="link-dark">OpenCV</a>.
+                  </p>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#profile" class="nav-link px-2 text-body-secondary">Profile</a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link px-2 text-body-secondary">Skills</a></li>
+      <li class="nav-item"><a href="#education" class="nav-link px-2 text-body-secondary">Education</a></li>
+      <li class="nav-item"><a href="#jobs" class="nav-link px-2 text-body-secondary">Work Experience</a></li>
     </ul>
-    <hr />
-    <h2>Work Experience</h2>
-    <ul>
-      <li>
-        <a href="https://transpetro.com.br/transpetro-institucional/"
-          >Petrobras Transporte - TRANSPETRO</a
-        >
-      </li>
-      <ul>
-        <li>Local: São Caetano do Sul - SP</li>
-        <li>Country: Brazil</li>
-      </ul>
-      <li><a href="https://www.swifttrans.com/">Swift Transportation</a></li>
-      <ul>
-        <li>Local: Troutdale Terminal - OR</li>
-        <li>Country: United States</li>
-      </ul>
-      <li>
-        <a href="https://www.ufpe.br/dmat"
-          >Federal University of Pernambuco - UFPE</a
-        >
-      </li>
-      <ul>
-        <li>Local: Recife - PE</li>
-        <li>Country: Brazil</li>
-      </ul>
-      <li>
-        <a href="https://www.ufmt.br/campus/varzea-grande"
-          >Federal University of Mato Grosso - UFMT</a
-        >
-      </li>
-      <ul>
-        <li>Local: Várzea Grande - MT</li>
-        <li>Country: Brazil</li>
-      </ul>
-      <li>
-        <a href="https://www.ufmt.br/campus/varzea-grande"
-          >Federal University of Rondonópolis - UFR</a
-        >
-      </li>
-      <ul>
-        <li>Local: Rondonópolis - MT</li>
-        <li>Country: Brazil</li>
-      </ul>
-    </ul>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Javascript</li>
-      <li>C and C++</li>
-      <li>OpenCV</li>
-      <li>Modern OpenGL</li>
-    </ul>
-    <hr />
-    <footer>
-      <p>© Sergio Silva. All rights reserved</p>
-    </footer>
+    <p class="text-center text-body-secondary">© 2024 Sergio Silva</p>
+  </footer>
+</div>
+  <!-- Bootstrap Javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
