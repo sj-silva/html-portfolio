@@ -2,169 +2,389 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!--Bootstrap Link-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/lightbox.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Sergio Silva | Portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header vh-100 text-center position-relative">
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h5 class="text-primary fs-3 fw-bold text-uppercase">Hey there!</h5>
+        <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
 
-<style>
- /*---- CSS Style ----*/
+        <p class="roles text-white text-uppercase fs-4">
+          <span>Online Educator | </span>
+          <span> Hobbyist in JavaScript and C++ |</span>
+          <span> Truck Driver</span>
+        </p>
 
-
- /*--------------*/
-</style>
-
-</head>
-  <body class="bg-light">
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-lg-4 bg-dark text-white text-center py-4">
-          <div class="header-left">
-            <img src="./assets/images/me.jpg" alt="profile photo" class="img-thumbnail rounded-circle mb-2" width="280" height="250" >
-            <h1 class="display-5">Sergio Silva</h1>
-            <h4 class="lead text-uppercase text-white-50 mb-4">Math Teacher</h4>
+        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
+          <div class="d-flex">
+            <div class="me-3">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="text-start">
+              <span>More About Me</span>
+            </div>
           </div>
-          <h5 class="text-uppercase bg-white text-dark py-2 rounded-pill">Social Media</h5>
-          <ul class="list-unstyled text-white-50 ml-5 py-2 text-start">
-            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
-            </svg> <a href="https://www.linkedin.com/in/sergio-silva-math/" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"> /in/sergio-silva-math</a></li>
+        </a>
 
-            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"></path>
-            </svg><a href="https://www.youtube.com/@Matematica_Aplicada" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"> @Matematica_Aplicada</a></li>
-         
-            <li class="list-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"></path>
-              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
-            </svg> <a href="https://pt.wikipedia.org/wiki/Itaparica" class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"> A Coruña, Spain</a></li>
-          </ul>
-          <h5 id="skills" class="text-uppercase bg-white text-dark py-2 rounded-pill">Skills</h5>
-          <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
-            <li class="list-item text-left">HTML/ CSS/Bootstrap</li>
-            <li class="list-item">Javascript</li>
-            <li class="list-item">C/C++</li>
-            <li class="list-item">OpenGL/OpenCV</li>
-            <li class="list-item">Excel-VBA</li>
-          </ul>
-
-          <h5 id="education" class="text-uppercase bg-white text-dark py-2 rounded-pill">Education</h5>
-          <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
-            <li class="list-item">
-              B.A. in Mathematics
-              <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
-                <li class="list-item">
-              <a href="https://www.im.ufrj.br/index.php/pt/" class="link-light"
-                >Federal University of Rio de Janeiro - UFRJ</a
-              ></li>
-              </ul>
-            </li>
-            <li class="list-item">
-              M.Sc. in Mathematics
-              <ul class="list text-white-50 ml-5 py-2 text-start text-capitalize">
-                <li class="list-item">
-              <a href="http://www.dmat.ufba.br/" class="link-light">Federal University of Bahia - UFBA</a>
-            </li>
-            </li>
-            
-          </ul>
-
+        <div class="social d-flex gap-3 position-absolute">
+          <a
+            href="https://www.youtube.com/@Matematica_Aplicada"
+            target="_blank"
+          >
+            <i class="fab fa-youtube fa-3x text-white"></i>
+          </a>
+          <a href="https://github.com/sj-silva" target="_blank">
+            <i class="fab fa-github fa-3x text-white"></i>
+          </a>
         </div>
-        
+      </div>
+    </header>
 
-        <div class="col-lg-8 bg-light text-dark py-4 px-5">
-          <div class="header-right">
-            <h4 id="profile" class="text-uppercase">Profile</h4>
-            <hr>
-            <p>I hold a Bachelor's and Master's degree Mathematics. Lately, I've been
-              teaching undergraduate students the subjects of Linear Algebra and
-              Calculus. Currently, I am seeking a career opportunity as a Web Developer.</p>
-          </div>
-          <div>
-            <h4 id="jobs" class="text-uppercase">Work Experience</h4>
-            <hr>
-            <ul class="list">
-              <li class="list-item">
-                <h5 class="text-uppercase"><a href="https://transpetro.com.br/transpetro-institucional/"
-                 class="link-dark" >Petrobras Transporte - Transpetro</a></h5>
-                <h6 class="text-black-50">Administration and Control Technician Jr.</h6>
-                <ul>
-                  <li>Local: São Caetano do Sul - SP</li>
-                  <li>Country: Brazil</li>
-                  <p>Develop Word documents and Excel spreadsheets, accompanied by VBA macros, to aid in pollution control programs, licensing and environmental authorizations, accident prevention, and the optimization of water, energy, and input utilization processes.</p>
-                </ul>
+    <!-- About -->
+    <section id="about" class="about bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Let me introduce myself.</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-100">
+          <img
+            src="./images/about-me.jpg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
+          <p class="lead">
+            I am a Brazilian online educator and coding hobbyist who is
+            currently living in A Coruña, Spain. With a background in teaching
+            mathematics at universities across Brazil, I launched a YouTube
+            channel in 2020 focused on tutorials for OpenGL. As a hobbyist, I’ve
+            developed skills in C++, JavaScript, and web technologies like HTML
+            and CSS. Recently, I passed my CAP exam, and now I balance my love
+            for coding with the fulfillment of driving trucks on the open road
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles and Skills -->
+    <section class="profile my-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Education</h3>
+            <p>
+              Here is some more info about myself to help you get to know me
+              better.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-book text-primary"></i> B.A. in Mathematics:
+                </h5>
+                <p class="ml-5 py-2">
+                  <a href="https://www.im.ufrj.br/index.php/pt/" target="_blank"
+                    >Federal University of Rio de Janeiro - UFRJ
+                  </a>
+                </p>
               </li>
 
-              <li class="list-item">
-                <h5 class="text-uppercase"><a href="https://www.swifttrans.com/"
-                 class="link-dark" >Swift Transportation</a></h5>
-                <h6 class="text-black-50">Truck Driver -  Free and Secure Trade (FAST) US and Canadian Border</h6>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-building text-primary"></i> Current Position:
+                </h5>
+                <p>Online Educator and JavaScript Programmer</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fab fa-youtube-square text-primary"></i> Youtube
+                  Playlist:
+                </h5>
                 <ul>
-                  <li>Local: Troutdale - OR</li>
-                  <li>Country: United States</li>
-                  <p>Transport of finished goods and raw materials over U.S. 48 states and Canada, both to and from manufacturing plants, as well as retail and distribution centers. Conduct thorough vehicle inspections to identify mechanical issues and safety concerns, and implement preventive maintenance procedures.</p>
+                  <li>
+                    <a
+                      href="https://youtube.com/playlist?list=PLVRDPs83ZhmcXYuktF3r2hfyoabg_EVPO&si=Z5ayntNovQ6ZpXVC"
+                      target="_blank"
+                      >OpenGL C++ - Gráficos 3D</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtube.com/playlist?list=PLVRDPs83ZhmfQGjLmOr6-m8VcPxjg_Jv0&si=OFM8oKQ9cYgO_da8"
+                      target="_blank"
+                      >OpenGL Moderno</a
+                    >
+                  </li>
                 </ul>
               </li>
-
-              <li class="list-item">
-                <h5 class="text-uppercase"><a href="https://www.ufpe.br/dmat"
-                 class="link-dark" >Federal University of Pernambuco - UFPE</a></h5>
-                <h6 class="text-black-50">Lecturer</h6>
-                <ul>
-                  <li>Local: Recife - PE </li>
-                  <li>Country: Brazil</li>
-                  <p>Between 2014 and 2015, I worked as a lecturer in the Departament of Mathematics, instructing courses such as Linear Algebra, Analytical Geometry, and Multivariable Calculus.</p>
-                </ul>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-envelope text-primary"></i> Email:
+                </h5>
+                <p>sergjsilva@gmail.com</p>
               </li>
-
-              <li class="list-item">
-                <h5 class="text-uppercase"><a href="https://www.ufmt.br/campus/varzea-grande"
-                 class="link-dark" >Federal University of Mato Grosso - UFMT</a></h5>
-                <h6 class="text-black-50">Lecturer</h6>
-                <ul>
-                  <li>Local: Varzea Grande - MT </li>
-                  <li>Country: Brazil</li>
-                  <p>Lecturer at Engineering Institue of Varzea Grande, Mato Grosso(MT).
-                     I taught Linear Algebra for the Computer Engineering, Transport Engineering and Automation departments. 
-                     Initiated and spearheaded a social project focused on introducing chess to children at <a href="https://www.facebook.com/ProfessoraMarize/"class="link-dark">Escola Estadual Senador Azeredo(EESA)</a>.</p>
-                </ul>
-              </li>
-
-              <li class="list-item">
-                <h5 class="text-uppercase"><a href="https://www.ufr.edu.br"
-                 class="link-dark" >Federal University of Rondonopolis - UFR</a></h5>
-                <h6 class="text-black-50">Lecturer</h6>
-                <ul>
-                  <li>Local: Rondonopolis - MT </li>
-                  <li>Country: Brazil</li>
-                  <p>
-                    Lecturer Linear Algebra, Numerical Analysis, Single and Multivariable Calculus at Institute of Agricultural and 
-                    Technological Sciences of Rondonopolis, Mato Grosso(MT). Develop teaching methodologies in Mathematics based on 
-                    Computer Graphics and Computer Vision, using <a href="https://github.com/sj-silva/OpenGLModerno" class="link-dark">OpenGL</a> and <a href="https://github.com/sj-silva/OpenCVPrimeirosPassos" class="link-dark">OpenCV</a>.
-                  </p>
-                </ul>
-              </li>
-
             </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Skills</h3>
+            <p>Here is a list of my skills 😉</p>
+            <h5>
+              <i class="fas fa-square text-primary"></i> HTML/ CSS / Bootstrap
+            </h5>
+            <h5><i class="fas fa-square text-primary"></i> JavaScript</h5>
+            <h5><i class="fas fa-square text-primary"></i> C/C++</h5>
+            <h5><i class="fas fa-square text-primary"></i> OpenGL/OpenCV</h5>
+            <h5><i class="fas fa-square text-primary"></i> Excel VBA</h5>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-12">
+            <a
+              href="#contact-form"
+              class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
+              >Sendme a Message</a
+            >
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#profile" class="nav-link px-2 text-body-secondary">Profile</a></li>
-      <li class="nav-item"><a href="#skills" class="nav-link px-2 text-body-secondary">Skills</a></li>
-      <li class="nav-item"><a href="#education" class="nav-link px-2 text-body-secondary">Education</a></li>
-      <li class="nav-item"><a href="#jobs" class="nav-link px-2 text-body-secondary">Work Experience</a></li>
-    </ul>
-    <p class="text-center text-body-secondary">© 2024 Sergio Silva</p>
-  </footer>
-</div>
-  <!-- Bootstrap Javascript-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">
+            Websites Portfolio
+          </h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">Check Out My Work</h2>
+          <p class="lead">Here is a small sample of my projects.</p>
+        </div>
+        <div class="row">
+          <!-- Ebook Website -->
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="./images/my-project-01.png"
+                data-lightbox="images"
+                data-title="<a href='https://my-ebook-website.pages.dev/' target='_blank' style='color:white; text-decoration:underline;'> Visit Ebook Website </a>"
+              >
+                <img
+                  src="./images/my-project-01.png"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Corso Website -->
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="./images/my-project-02.png"
+                data-lightbox="images"
+                data-title="<a href='https://corso-website-1jm.pages.dev/' target='_blank' style='color:white; text-decoration:underline;'> Visit Corso Website </a>"
+              >
+                <img
+                  src="./images/my-project-02.png"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- People API -->
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="./images/my-project-03.png"
+                data-lightbox="images"
+                data-title="<a href='https://human-faces-loader.pages.dev/' target='_blank' style='color:white; text-decoration:underline;'> Visit People API </a>"
+              >
+                <img
+                  src="./images/my-project-03.png"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- Curve Fit -->
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="images/my-project-04.gif"
+                data-lightbox="images"
+                data-title="<a href='https://github.com/sj-silva/curve-fit.git' target='_blank' style='color:white; text-decoration:underline;'> Visit Curve Fit - GitHub </a>"
+              >
+                <img
+                  src="images/my-project-04.gif"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="https://youtube.com/playlist?list=PLVRDPs83ZhmfQGjLmOr6-m8VcPxjg_Jv0&si=OFM8oKQ9cYgO_da8"
+                data-lightbox="images"
+                data-title="Modern OpenGL Playlist"
+              >
+                <img
+                  src="./images/my-project-05.png"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Box 2D C++ -->
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="./images/my-project-06.png"
+                data-lightbox="images"
+                data-title="Box 2D C++"
+              >
+                <img
+                  src="./images/my-project-06.png"
+                  alt=""
+                  class="img-fluid rounded-3"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services text-bg-dark py-5 position-relative">
+      <div class="container position-relative">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">Services</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">What Can I Do For You?</h2>
+          <p class="lead">
+            Here are some of the services that I offer when it comes to web
+            development and business.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Web Design</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              craft visually appealing and user-friendly websites tailored to
+              your brand's identity.
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Web Development</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              I bring your website to life with clean, efficient, and scalable
+              code.
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-calculator fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Online Math Help</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Struggling with math concepts? I offer personalized online math
+              tutoring tailored to your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact text-bg-dark bg-gradient py-3" id="contact-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="text-center mb-5">
+              <h4 class="text-uppercase fw-bold text-primary">Contact</h4>
+              <hr class="w-25 mx-auto" />
+              <h2 class="mb-4">Let's Connect!</h2>
+              <p class="lead">
+                I'd love to hear from you. Whether you have a question, a
+                project in mind, or just want to say hello, feel free to reach
+                out.
+              </p>
+            </div>
+
+            <!-- Form -->
+            <form name="contact" netlify>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="mb-5 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="text-center mt-5">
+          <p class="flex-grow-1">Copyright &copy; 2024</p>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
