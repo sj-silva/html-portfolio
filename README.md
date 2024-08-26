@@ -14,3 +14,7 @@ This is a dark-light contrast website for a portfolio. It is related to being a 
 - Lightbox modals for projects
 - Progress bar stats
 - Font awesome icons
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9f1cb03f14b497c18e23c89d83f7949ddea07ac7
